@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Tienda Mundial</title>
+
+    <link rel="stylesheet" href="bonito.css">
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="encabezado">
+
+        <div class="logo">
+
+            <span class="balon">⚽</span>
+            
+
+            <div>
+                <h1>Tienda <span>Mundial</span></h1>
+                <p>Camisetas y Zapatos Deportivos</p>
+            </div>
+
+        </div>
+
+        <br> 
+        <nav class="menu"> 
+            
+    
+
+            <a class="activo" href="index.html">Inicio</a>
+
+            <a href="productos.html">Productos</a>
+
+            <a href="contacto.html">Contacto</a>
+
+            <a href="carrito.html">Carrito 🛒</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- PRESENTACIÓN PRINCIPAL -->
+
+    <section class="principal">
+
+        <div class="texto-principal">
+
+            <p class="frase">PASIÓN POR EL DEPORTE</p>
+
+            <h2>
+                Las mejores camisetas
+                <br>
+                <span>y zapatos deportivos</span>
+            </h2>
+
+            <p>
+                Encuentra productos de tus equipos favoritos
+                y las mejores marcas deportivas.
+            </p>
+
+           <!-- <a class="boton-principal" href="productos.html">
+                🛒 Ver productos → 
+            </a> -->
+
+        </div>
+
+
+        <div class="imagen-principal">
+
+            <img
+                src="C:\Users\DELL\OneDrive\Desktop\HTML\mundial\9c09f46c-04ac-46f0-87ad-9f4ee386ec29.png"
+                alt="Camiseta deportiva">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CATEGORÍAS -->
+
+    <section class="categorias">
+
+        <h2>¿Qué estás buscando?</h2>
+
+        <p>Elige una categoría y descubre nuestros productos.</p>
+
+
+        <div class="tarjetas-categorias">
+
+
+            <!-- CAMISETAS -->
+
+            <a class="categoria" href="productos.html">
+
+                <div class="imagen-categoria">
+
+                    <img
+                        src="https://marketplace.addi.com/_next/image?url=https%3A%2F%2Fmktaddi.vteximg.com.br%2Farquivos%2Fids%2F72507398%2Fimage---0.jpg%3Fv%3D639062760283000000&w=1920&q=75"
+                        alt="Camisetas de fútbol">
+
+                </div>
+
+                <h3>⚽ Camisetas de Fútbol</h3>
+
+                <p>
+                    Selecciones nacionales y equipos.
+                </p>
+
+                <span class="boton-categoria">
+                    Ver camisetas →
+                </span>
+
+            </a>
+
+
+
+            <!-- NIKE -->
+
+            <a class="categoria" href="nike.html">
+
+                <div class="imagen-categoria">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDCIS9LsTmZgyDRbe-TYb8dfaUAppbFFc7dAIeQrI12w&s=10"
+                        alt="logo Nike">
+
+                </div>
+
+                <h3> Nike</h3>
+
+                <p>
+                    Comodidad y rendimiento.
+                </p>
+
+                <span class="boton-categoria">
+                    Ver mas →
+                </span>
+
+            </a>
+
+
+
+            <!-- ADIDAS -->
+
+            <a class="categoria" href="adidas.html">
+
+                <div class="imagen-categoria">
+
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKwAAACUCAMAAAA5xjIqAAAAY1BMVEX///8AAACsrKz7+/v29vbHx8ft7e3S0tLe3t7q6uqbm5u9vb3a2tpoaGi3t7fKysqGhoZWVlZISEhzc3M2NjalpaVjY2MSEhKMjIzk5OQwMDAKCgoaGho7Ozt5eXkfHx8pKSmI0ggwAAAEO0lEQVR4nO2a63aqMBSEG7kj3kFFi/L+T1lbPe2EAhmoMayz9vfTVZoxJNuZnby9CYIgCIIgCIIgCP8ps8i1App4o2rXGkjKo7pRuJZBMdt+alV56VqIES/K1YO1ay0msov6IXOtpp/0BFrVxrWcHvzgrHSWriV1Ei1Uk03oWlQ74fr9l9aJlq9w1qL0kwlO7XzToVVdXEtrEv9erN8cAtfqNJK0WQM0Fr5rgcBy2yf1xnSmNjJJveFa44Ny3bsCHqSuZd6ZE1KVOk3EInRWLI2JlK+MEqsmknCOlNita5l3ytws9cbMtc47KTe1E7EIV0rtRBIOV75U4lrnF36PiwF2rnXeiQ6M2PPctc47F7PUG5tpuK+QEjuV8lVQYt8dli94qwnhE28cHSn1ghrdyZKbWjcWIV4rdcWhuandu9B67xHtvJ9PVpRYtXq1Ui+oHkND5fTWlNjqxeWr/KmqOXyc1ZTalzZovBR9C4Yrzn3VL+wvz/WNlMfwNTj39bKEk+yaLgCNX1ezq0Hc+e+fSZi2GBbIrf6eErv3uod4GkFrkMXWdsBNrf3+sr/o8IFo/LiprSxPbdi91beQAEpuau02aLqbr42huVx+tZhwQkNsAeNXVv1/+sBaeAyNXhUrJ1m+LFmEldlOae6r7QzkN1aOx0pqf2O4cli+hg/t7agnKgsJhxw6h8rJ5XIr7os0fhiuOGNrxSJwlbOGoUNuahcWxL5x84S9IYfli8ut2NoOuda9jQYNa/yGfz8r5Ytbg9gb4qb23UZ45NpuFbiTjDkcs9OgSaiRNffFfb/aRvni2m7Y2iZPRXYWbDjZdrvA0Fwut3IEzVXOM1ZOLpfXT5GX7bRfGG57b2F7k6ciT7AIfnpSB5yniBsaKidZnqs/N2jmX+Fkj2WQcyc5GL/VS8pX9M8WYpmPue2NQ3Pu8k8XAP3j99Y44Ofc9r5C5SRz+fj+sl/gb6v2ijhji+GKLM9jLUKgh+4aXxG5vcF9keV53AXAcNeMpuhSyUNPNH6ksR1Rvlo7RPgLkw0PV1zLQw12X+0doi3+eHPl6wRvlQzHAxs0SddPFM4TGa5gaI9zX9chCafsToXaFXNyDcK2jDmLsOcXQu/1PHxFZLhC90XmcvZ0PzLsAixf5BrE4zFu6VwpYxsbv7p2BEC6E3iCXDpMf7kgfvLxFZFXzsBVkEsnNyachOpPYhIccTJHLh3j8ZjPWSl8RcnJ/PdKdxXc1JrdF9eNOODUjihf3BPG/vKYS06kO4EnyPBovEHD3RLQEg65BsFVlNzSMV8A5Oz8CIuAxo9cOsaEE3MHFmiQYy5coavgptZ8AZBrFmtHANwj5+G53Fi+wuGXnHzOpsLQ5NGE+QIgmZTwrIvsv8K2JPsOW6P7KmYEBRYEfzn4kTnzxKyYxrVVQRAEQRAEQRAEQRAEQRAEQRAEQbDGB+TpNF9roqfgAAAAAElFTkSuQmCC"
+                        alt="logo Adidas">
+
+                </div>
+
+                <h3> Adidas</h3>
+
+                <p>
+                    Estilo y calidad deportiva.
+                </p>
+                
+
+                <span class="boton-categoria">
+                    Ver mas →
+                </span>
+
+            </a>
+
+
+
+            <!-- EQUIPOS -->
+
+            <a class="categoria" href="selecciones.html">
+
+                <div class="imagen-categoria">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCLuOLtDyKyj6Sfi7aWW4xnbnR4nXwRSSHgiTUnn7acg&s=10"
+                        alt="selecciones ">
+
+                </div>
+
+                <h3>Camisetas del mundial </h3>
+
+                <p>
+                    Conoce todas las selecciones y camisetas.
+                </p>
+
+                <span class="boton-categoria">
+                    Ver camisetas  →
+                </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- BENEFICIOS -->
+
+    <section class="beneficios">
+
+        <div class="beneficio">
+
+            <span>🚚</span>
+
+            <div>
+                <h3>Envíos a todo el país</h3>
+                <p>Rápidos y seguros</p>
+            </div>
+
+        </div>
+
+
+        <div class="beneficio">
+
+            <span>🛡️</span>
+
+            <div>
+                <h3>Compra segura</h3>
+                <p>Tus datos protegidos</p>
+            </div>
+
+        </div>
+
+
+        <div class="beneficio">
+
+            <span>💳</span>
+
+            <div>
+                <h3>Múltiples pagos</h3>
+                <p>Tarjeta, transferencia y más</p>
+            </div>
+
+        </div>
+
+
+        <div class="beneficio">
+
+            <span>📞</span>
+
+            <div>
+                <h3>Atención al cliente</h3>
+                <p>Estamos para ayudarte</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PRODUCTOS DESTACADOS -->
+
+    <section class="destacados">
+
+        <h2>Productos destacados</h2>
+
+        <p>
+            Algunos de nuestros productos más populares.
+        </p>
+
+
+        <div class="productos-destacados">
+
+
+            <article class="producto-destacado">
+
+                <img
+                    src="https://marketplace.addi.com/_next/image?url=https%3A%2F%2Fmktaddi.vteximg.com.br%2Farquivos%2Fids%2F72507398%2Fimage---0.jpg%3Fv%3D639062760283000000&w=1920&q=75"
+                    alt="Camiseta Argentina">
+
+                <h3>Camiseta Argentina</h3>
+
+                <p class="precio">$89.900</p>
+
+                <a class="boton" href="productos.html">
+                    Ver producto
+                </a>
+
+            </article>
+
+
+
+            <article class="producto-destacado">
+
+                <img
+                    src="https://i.ebayimg.com/images/g/UhoAAeSwlWhqJypk/s-l1600.webp"
+                    alt="Camiseta Brasil">
+
+                <h3>Camiseta Brasil</h3>
+
+                <p class="precio">$89.900</p>
+
+                <a class="boton" href="productos.html">
+                    Ver producto
+                </a>
+
+            </article>
+
+
+
+            <article class="producto-destacado">
+
+                <img
+                    src="https://peopleplays.vtexassets.com/arquivos/ids/568074-1200-auto?v=638980281048830000&width=1200&height=auto&aspect=true"
+                    alt="Camiseta Colombia">
+
+                <h3>Camiseta Colombia</h3>
+
+                <p class="precio">$89.900</p>
+
+                <a class="boton" href="productos.html">
+                    Ver producto
+                </a>
+
+            </article>
+
+
+
+            <article class="producto-destacado">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Stk1ddsoUSJYGDD-jDpOn49srCS4MCNxP93nhQ3p-A&s"
+                    alt="Zapatos deportivos">
+
+                <h3>Zapatos deportivos</h3>
+
+                <p class="precio">$159.900</p>
+
+                <a class="boton" href="nike.html">
+                    Ver producto
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

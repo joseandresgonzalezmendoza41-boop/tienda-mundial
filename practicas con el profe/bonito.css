@@ -1,0 +1,130 @@
+body{
+   background-color: lightgoldenrodyellow;
+}
+
+/* TITULO */
+.title {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px;
+}
+
+/* MENU */
+.menu {
+    background-color: #388E3C;
+    text-align: center;
+    padding: 15px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* CONTENIDO */
+.contenido {
+    background-color: #f0f3f2;
+    text-align: center;
+    padding: 30px;
+}
+
+/* SUBTITULO */
+.suttitulo {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+
+
+.tarjeta {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+.imagen {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* NOMBRE DEL PRODUCTO */
+.nombre {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* DESCRIPCION */
+.descripcion {
+    color: #555555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* BOTON */
+.boton {
+    display: inline-block;
+    background-color: #FF9800;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+login 
+
+
+.contacto {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contacto form {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(234, 242, 237);
+    border-radius: 10px;
+}
+
+.contacto label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.contacto textarea {
+    height: 100px;
+}
+
+.contacto button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+

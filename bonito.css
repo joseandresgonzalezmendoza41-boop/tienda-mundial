@@ -1,0 +1,461 @@
+/* ==========================================================================
+   1. ESTRUCTURA GLOBAL Y TIPOGRAFÍA
+   ========================================================================== */
+
+body {
+    background-color: #f2f6fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* ==========================================================================
+   2. ENCABEZADO Y NAVEGACIÓN PRINCIPAL
+   ========================================================================== */
+
+.encabezado {
+    background-color: #092b50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.logo h1 span {
+    color: #f5c518;
+}
+
+.logo p {
+    margin: 3px 0 0;
+    font-size: 14px;
+}
+
+.balon {
+    font-size: 45px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.menu .activo {
+    background-color: #f5c518;
+    color: #092b50;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   3. COMPONENTES REUTILIZABLES (BOTONES Y TARJETAS)
+   ========================================================================== */
+
+.boton, .boton-principal, .boton-categoria {
+    display: inline-block;
+    background-color: #f5c518;
+    color: #092b50;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.boton {
+    padding: 12px 25px;
+}
+
+.boton-principal {
+    margin-top: 20px;
+    padding: 15px 25px;
+}
+
+.boton-categoria {
+    padding: 10px 18px;
+    border-radius: 20px;
+}
+
+.boton:hover, .boton-principal:hover, .boton-categoria:hover {
+    background-color: white;
+}
+
+/* Estilos base para las tarjetas de productos (Catálogo e Inicio) */
+.tarjeta, .producto-destacado {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Ajuste unificado para las imágenes dentro de los bloques de productos */
+.imagen, .producto-destacado img {
+    width: 100%;
+    max-width: 200px;
+    height: 220px;
+    object-fit: contain;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #092b50;
+}
+
+/* ==========================================================================
+   4. SECCIÓN DE TIENDA / CATÁLOGO (VISTA DE PRODUCTOS)
+   ========================================================================== */
+
+.pagina-productos {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Menú lateral izquierdo (Categorías/Preferencias) */
+.menu-paises {
+    width: 190px;
+    flex-shrink: 0;
+    background-color: #092b50;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.menu-paises h2 {
+    color: white;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.menu-paises a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+    text-transform: capitalize; /* Corrige automáticamente textos como "carrera" */
+    transition: 0.2s;
+}
+
+.menu-paises a:hover {
+    background-color: #f5c518;
+    color: #092b50;
+}
+
+/* Rejilla principal del catálogo */
+.catalogo-mundial {
+    flex: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.titulo-catalogo {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/* ==========================================================================
+   5. SECCIÓN DE INICIO (LANDING PAGE)
+   ========================================================================== */
+
+/* Hero Banner */
+.principal {
+    min-height: 420px;
+    background-color: #092b50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 8%;
+    box-sizing: border-box;
+    color: white;
+}
+
+.texto-principal {
+    width: 48%;
+}
+
+.frase {
+    color: #f5c518;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.texto-principal h2 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.texto-principal h2 span {
+    color: #f5c518;
+}
+
+.texto-principal p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.imagen-principal {
+    width: 45%;
+    text-align: center;
+}
+
+.imagen-principal img {
+    width: 80%;
+    max-height: 350px;
+    object-fit: contain;
+}
+
+/* Categorías del Home */
+.categorias, .destacados {
+    padding: 45px 5%;
+    text-align: center;
+}
+
+.categorias h2, .destacados h2 {
+    color: #092b50;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.categorias > p, .destacados > p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.tarjetas-categorias, .productos-destacados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.categoria {
+    background-color: #092b50;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+.categoria:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.imagen-categoria {
+    height: 180px;
+    overflow: hidden;
+}
+
+.imagen-categoria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.categoria h3 {
+    font-size: 20px;
+    margin: 18px 15px 8px;
+}
+
+.categoria p {
+    margin: 0 15px 18px;
+    color: #ddd;
+}
+
+/* Bloque de Beneficios */
+.beneficios {
+    background-color: white;
+    padding: 30px 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+}
+
+.beneficio:last-child {
+    border-right: none;
+}
+
+.beneficio span {
+    font-size: 35px;
+}
+
+.beneficio h3 {
+    margin: 0;
+    color: #092b50;
+}
+
+.beneficio p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* ==========================================================================
+   6. CARRITO DE COMPRAS
+   ========================================================================== */
+
+.producto-carrito {
+    width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.imagen-carrito {
+    width: 120px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.total {
+    width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   7. RESPONSIVE DESIGN (ADAPTACIÓN A PANTALLAS MÓVILES)
+   ========================================================================== */
+
+@media (max-width: 900px) {
+    .principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-principal, .imagen-principal {
+        width: 100%;
+    }
+
+    .tarjetas-categorias, .beneficios, .productos-destacados, .catalogo-mundial {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pagina-productos {
+        flex-direction: column;
+    }
+    
+    .menu-paises {
+        width: calc(100% - 30px);
+        margin: 15px;
+        box-sizing: border-box;
+    }
+}
+
+
+/* ==========================================================================
+8. PÁGINA DE CONTACTO
+========================================================================== */
+
+.contacto {
+width: 700px;
+margin: 50px auto;
+padding: 35px;
+background-color: white;
+border-radius: 12px;
+border: 1px solid #ddd;
+text-align: center;
+box-sizing: border-box;
+}
+
+.contacto h2 {
+color: #092b50;
+font-size: 32px;
+margin-bottom: 10px;
+}
+
+.contacto > p {
+color: #555;
+margin-bottom: 30px;
+}
+
+/* Formulario */
+
+.contacto form {
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+
+.contacto label {
+color: #092b50;
+font-weight: bold;
+margin-bottom: 6px;
+}
+
+.contacto input,
+.contacto textarea {
+padding: 12px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-family: Arial, sans-serif;
+font-size: 15px;
+box-sizing: border-box;
+}
+
+.contacto textarea {
+height: 120px;
+resize: vertical;
+}
+
+/* Botón enviar */
+
+.contacto button {
+background-color: #f5c518;
+color: #092b50;
+border: none;
+padding: 13px;
+border-radius: 8px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.contacto button:hover {
+background-color: #092b50;
+color: white;
+}
+
+/* Contacto en celulares */
+
+@media (max-width: 900px) {
+
+
+.contacto {
+    width: calc(100% - 30px);
+    margin: 30px auto;
+    padding: 25px;
+}
+
+
+}
